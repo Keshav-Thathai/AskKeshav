@@ -1,0 +1,39 @@
+<!-- html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskKeshav - AI Agent</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🤖 AskKeshav</h1>
+        <p>Welcome to AskKeshav AI agent developed by Keshav Thathai</p>
+
+        <div id="chat-box"></div>
+
+        <div class="input-box">
+
+            <input
+                type="text"
+                id="message"
+                placeholder="Ask anything..."
+            >
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
